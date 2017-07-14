@@ -1,0 +1,39 @@
+{
+    "name": "emberjs",
+    "displayName": "Ember.js",
+    "description": "All the extensions you need for developing Ember.js applications.",
+    "version": "1.0.0",
+    "publisher": "emberjs",
+    "author": "Thomas Sauer <t-sauer@outlook.de>",
+    "license": "MIT",
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "galleryBanner": {
+        "color": "#e36550",
+        "theme": "light"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/emberwatch/vscode-ember-pack.git"
+    },
+    "bugs": {
+        "url": "https://github.com/emberwatch/vscode-ember-pack/issues"
+    },
+    "keywords": [
+        "Ember",
+        "Ember.js",
+        "Handlebars",
+        "Javascript"
+    ],
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionDependencies": [ 
+        "felixrieseberg.vsc-ember-cli",
+        "emberjs.vscode-ember",
+        "josa.ember-related-files",
+        "phanitejakomaravolu.EmberES6Snippets"
+    ]
+}
