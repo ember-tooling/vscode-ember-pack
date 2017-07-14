@@ -1,6 +1,6 @@
 # Ember.js Extension Pack
 
-This extension pack adds all extensions to Visual Studio Code you need for the best developer experience.
+This extension pack adds all extensions to Visual Studio Code you need for developing Ember.js applications.
 
 ## Included extensions
 
