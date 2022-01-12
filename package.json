@@ -31,9 +31,7 @@
         "Extension Packs"
     ],
     "extensionDependencies": [ 
-        "felixrieseberg.vsc-ember-cli",
         "emberjs.vscode-ember",
-        "josa.ember-related-files",
         "phanitejakomaravolu.EmberES6Snippets"
     ]
 }
