@@ -2,7 +2,7 @@
     "name": "emberjs",
     "displayName": "Ember.js",
     "description": "All the extensions you need for developing Ember.js applications.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "emberjs",
     "author": "Thomas Sauer <t-sauer@outlook.de>",
     "license": "MIT",
@@ -30,7 +30,7 @@
     "categories": [
         "Extension Packs"
     ],
-    "extensionDependencies": [ 
+    "extensionDependencies": [
         "emberjs.vscode-ember",
         "phanitejakomaravolu.EmberES6Snippets"
     ]
