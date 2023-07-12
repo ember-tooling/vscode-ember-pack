@@ -2,7 +2,7 @@
     "name": "emberjs",
     "displayName": "Ember.js",
     "description": "All the extensions you need for developing Ember.js applications.",
-    "version": "1.2.0",
+    "version": "2.0.0",
     "publisher": "emberjs",
     "author": "Thomas Sauer <t-sauer@outlook.de>",
     "license": "MIT",
@@ -16,22 +16,24 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/emberwatch/vscode-ember-pack.git"
+        "url": "https://github.com/ember-tooling/vscode-ember-pack.git"
     },
     "bugs": {
-        "url": "https://github.com/emberwatch/vscode-ember-pack/issues"
+        "url": "https://github.com/ember-tooling/vscode-ember-pack/issues"
     },
     "keywords": [
         "Ember",
         "Ember.js",
         "Handlebars",
-        "Javascript"
+        "Javascript",
+        "Typescript",
+        "Glimmer"
     ],
     "categories": [
         "Extension Packs"
     ],
     "extensionDependencies": [
-        "emberjs.vscode-ember",
-        "phanitejakomaravolu.EmberES6Snippets"
+        "lifeart.vscode-ember-unstable",
+        "lifeart.vscode-glimmer-syntax"
     ]
 }
