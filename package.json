@@ -40,10 +40,13 @@
     "vs:package": "vsce package --yarn",
     "vs:publish": "vsce publish --yarn",
     "vs:publish:ci": "vsce publish --yarn --pat $VSCODE_STORE_TOKEN",
-    "ov:publish:ci": "ovsx publish --yarn --pat $OPEN_VSX_STORE_TOKEN"
+    "ov:publish:ci": "ovsx publish --yarn --pat $OPEN_VSX_STORE_TOKEN",
+    "prettier": "prettier --write \"**/*.{js,ts,json,yaml}\"",
+    "prettier:package": "prettier --write \"package.json\""
   },
   "devDependencies": {
     "@vscode/vsce": "^2.19.0",
-    "ovsx": "^0.8.2"
+    "ovsx": "^0.8.2",
+    "prettier": "^3.0.0"
   }
 }
