@@ -34,7 +34,10 @@
   ],
   "extensionPack": [
     "lifeart.vscode-ember-unstable",
-    "lifeart.vscode-glimmer-syntax"
+    "lifeart.vscode-glimmer-syntax",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode"
   ],
   "scripts": {
     "vs:package": "vsce package --yarn",
