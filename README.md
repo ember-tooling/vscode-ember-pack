@@ -13,5 +13,3 @@ This extension pack adds all extensions to Visual Studio Code you need for devel
 * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Code formatter using prettier.
 
 * [Editor Config](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): EditorConfig for VS Code.
-
-* [Ember Template Lint](https://marketplace.visualstudio.com/items?itemName=ember-template-lint.vscode-ember-template-lint): Lint your Ember templates with ember-template-lint.
