@@ -1,37 +1,56 @@
 {
-    "name": "emberjs",
-    "displayName": "Ember.js",
-    "description": "All the extensions you need for developing Ember.js applications.",
-    "version": "1.2.0",
-    "publisher": "emberjs",
-    "author": "Thomas Sauer <t-sauer@outlook.de>",
-    "license": "MIT",
-    "icon": "icon.png",
-    "engines": {
-        "vscode": "^1.14.0"
-    },
-    "galleryBanner": {
-        "color": "#e36550",
-        "theme": "light"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/emberwatch/vscode-ember-pack.git"
-    },
-    "bugs": {
-        "url": "https://github.com/emberwatch/vscode-ember-pack/issues"
-    },
-    "keywords": [
-        "Ember",
-        "Ember.js",
-        "Handlebars",
-        "Javascript"
-    ],
-    "categories": [
-        "Extension Packs"
-    ],
-    "extensionDependencies": [
-        "emberjs.vscode-ember",
-        "phanitejakomaravolu.EmberES6Snippets"
-    ]
+  "name": "emberjs",
+  "displayName": "Ember.js Extension Pack",
+  "description": "All the extensions you need for developing Ember.js applications.",
+  "version": "2.0.0",
+  "publisher": "EmberTooling",
+  "author": "Thomas Sauer <t-sauer@outlook.de>",
+  "license": "MIT",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "galleryBanner": {
+    "color": "#e36550",
+    "theme": "light"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ember-tooling/vscode-ember-pack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ember-tooling/vscode-ember-pack/issues"
+  },
+  "keywords": [
+    "Ember",
+    "Ember.js",
+    "Handlebars",
+    "Javascript",
+    "Typescript",
+    "Glimmer"
+  ],
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "lifeart.vscode-ember-unstable",
+    "lifeart.vscode-glimmer-syntax",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode"
+  ],
+  "scripts": {
+    "vs:package": "vsce package --yarn",
+    "vs:publish": "vsce publish --yarn",
+    "vs:publish:ci": "vsce publish --yarn --pat $VSCODE_STORE_TOKEN",
+    "ov:publish:ci": "ovsx publish --yarn --pat $OPEN_VSX_STORE_TOKEN",
+    "prettier": "prettier --write \"**/*.{js,ts,json,yaml}\"",
+    "prettier:package": "prettier --write \"package.json\"",
+    "vsce": "vsce"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.19.0",
+    "ovsx": "^0.8.2",
+    "prettier": "^3.0.0"
+  }
 }
