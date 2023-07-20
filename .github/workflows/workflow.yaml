@@ -43,7 +43,7 @@ jobs:
         uses: volta-cli/action@v4
 
       - name: install dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: update metadata in package.json
         uses: onlyutkarsh/patch-files-action@v1.0.5
@@ -64,7 +64,7 @@ jobs:
           tag: 'v${{ steps.gitversion.outputs.majorMinorPatch }}'
 
       - name: compile and create vsix
-        run: pnpm vs:package
+        run: yarn vs:package
 
       - name: upload vsix as artifact
         uses: actions/upload-artifact@v2
@@ -76,13 +76,13 @@ jobs:
         if: github.ref == 'refs/heads/master'
         env:
           VSCODE_STORE_TOKEN: ${{ secrets.VSCODE_STORE_TOKEN }}
-        run: pnpm vs:publish:ci
+        run: yarn vs:publish:ci
 
       - name: publish to marketplace OPEN VSX
         if: github.ref == 'refs/heads/master'
         env:
           OPEN_VSX_STORE_TOKEN: ${{ secrets.OPEN_VSX_STORE_TOKEN }}
-        run: pnpm ov:publish:ci
+        run: yarn ov:publish:ci
 
       - name: create a release
         if: github.ref == 'refs/heads/master'
