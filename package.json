@@ -3,7 +3,7 @@
   "displayName": "Ember.js Extension Pack",
   "description": "All the extensions you need for developing Ember.js applications.",
   "version": "1.2.0",
-  "publisher": "emberjs",
+  "publisher": "EmberTooling",
   "author": "Thomas Sauer <t-sauer@outlook.de>",
   "license": "MIT",
   "icon": "icon.png",
