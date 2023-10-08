@@ -13,3 +13,7 @@ This extension pack adds all extensions to Visual Studio Code you need for devel
 * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Code formatter using prettier.
 
 * [Editor Config](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): EditorConfig for VS Code.
+
+## See also
+
+* [Glint](https://marketplace.visualstudio.com/items?itemName=typed-ember.glint-vscode): Incorporate Glimmer templates into TypeScript-powered tooling for a project, enabling them to participate in rich editor features such as: info on hover, go to definition, symbol renaming, finding references, and auto completions. This is not installed as part of the extension pack but should be considered for Ember projects built with TypeScript. 
