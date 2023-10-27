@@ -37,7 +37,8 @@
     "lifeart.vscode-glimmer-syntax",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint"
   ],
   "scripts": {
     "vs:package": "vsce package --yarn",
