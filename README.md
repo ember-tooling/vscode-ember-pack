@@ -10,6 +10,8 @@ This extension pack adds all extensions to Visual Studio Code you need for devel
 
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Integrates ESLint into VS Code.
 
+* [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint): Official Stylelint extension for Visual Studio Code.
+
 * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Code formatter using prettier.
 
 * [Editor Config](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): EditorConfig for VS Code.
