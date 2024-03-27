@@ -33,7 +33,7 @@
     "Extension Packs"
   ],
   "extensionPack": [
-    "lifeart.vscode-ember-unstable",
+    "embertooling.vscode-ember",
     "lifeart.vscode-glimmer-syntax",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
