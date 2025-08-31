@@ -35,6 +35,7 @@
   "extensionPack": [
     "embertooling.vscode-ember",
     "lifeart.vscode-glimmer-syntax",
+    "typed-ember.glint-vscode",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
