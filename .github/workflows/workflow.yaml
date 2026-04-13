@@ -1,4 +1,5 @@
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'feature/**' # match an pushes on feature/* and feature/<any sub branch>/*
@@ -13,23 +14,18 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: checkout repo
-        uses: actions/checkout@v3
-
-      - name: fetch all history and tags from all branches for gitversion
-        run: git fetch --prune --unshallow
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: install gitversion tool
-        uses: gittools/actions/gitversion/setup@v0.9
+        uses: gittools/actions/gitversion/setup@v3.1.11
         with:
-          versionSpec: '6.0.0-beta.3'
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+          versionSpec: '6.x'
 
       - name: execute gitversion
-        id: gitversion # step id used as reference for output values
-        uses: gittools/actions/gitversion/execute@v0.9.3
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v3.1.11
 
       - name: print gitversion
         run: |
@@ -67,7 +63,7 @@ jobs:
         run: yarn vs:package
 
       - name: upload vsix as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: emberjs-${{steps.gitversion.outputs.majorMinorPatch}}.vsix
           path: ${{github.workspace}}/emberjs-${{steps.gitversion.outputs.majorMinorPatch}}.vsix
@@ -86,9 +82,7 @@ jobs:
 
       - name: create a release
         if: github.ref == 'refs/heads/master'
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.gitversion.outputs.majorMinorPatch }}
-          release_name: v${{ steps.gitversion.outputs.majorMinorPatch }}
+          name: v${{ steps.gitversion.outputs.majorMinorPatch }}
